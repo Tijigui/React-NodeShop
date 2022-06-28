@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2? family= Fira+Sans:wght@100;200;400;800 & display=swap');
+
+/* RESET CSS */
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    font-size: 100%;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+    border: none;
+}
+
+:root{
+    --cbc:#13c7ae;
+    --btn:#0cae98;
+    --Branco:#fff;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+h2{
+    font-size: 1.5em;
+    color: #333;
+}
+
+p{
+    font-size: 1em;
+    color: #777;
+}
+
+/* Cabeçalho */
+
+.cabecalho{
+    
+    width: 100%;
+    
+    float: left;
+    
+    padding: 50px 8%;
+    
+    background: var(--cbc);
+}
+
+.logo a{
+    /* Largura da Logo */
+    width: 221px;
+    /* Altura da Logo */
+    height: 48px;
+    /* Flutuar a Esquerda */
+    float: left;
+    /* Inserir uma imagem */
+    background: url('./../Header/IMG/logo.png') no-repeat;
+    /* Tamanho do texto */
+    font-size: 0;
+}
+
+.cabecalho form{
+    /* Largura do campo Input */
+    width: 30%;
+/* Flutuar a Direita */
+    float: right;
+}
+
+.cabecalho input[type="text"]{
+    /* Largura do Botão Input */
+    width: 85%;
+     /* Flutuar a Esquerda */
+    float: left;
+    /* Espaçamento Lt Esq Lt Dir */
+    padding: 15px 10px;
+    /* Borda Arredondada na parte Direita */
+    border-radius: 10px 0 0 10px;
+}
+
+.cabecalho button{
+    /* Largura do Botão */
+    width: 15%;
+    /* Flutuar a Direita */
+    float: right;
+    /* Espaçamento Lt Esq e Lt Dir */
+    padding: 15px 10px;
+    /* Mudar a Cor de Fundo */
+    background-color:var(--btn);
+    /* Mudar a cor do Próprio Elemento */
+    color:var(--Branco);
+    /* Mudar o Estilo do Cursor */
+    cursor: pointer;
+    /* Borda Arredondada na parte Direita */
+    border-radius: 0 10px 10px 0;
+}
+
+/* Menu */
+
+.menu{
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 18px 8%;
+}
+
+.menu li{
+    float: left;
+    /* padding: 5px; */
+}
+
+.menu li a{
+    color: #9d9d9d;
+    margin-right: 25px;
+}
+
+.menu li a:hover{
+    color: var(--Branco);
+}
+
+/* Social-Icons */
+
+.social-icons{
+    float: right;
+}
+
+.social-icons a{
+    color: var(--Branco);
+    float: left;
+    margin-left: 18px;
+}
+
+.social-icons .btn-facebook:hover{
+    color: #3b5998;
+}
+
+.social-icons .btn-twitter:hover{
+    color: #54a4d6;
+}
+
+.social-icons .btn-google:hover{
+    color: #d73d32;  
+}
+
+.social-icons .btn-instagram:hover{
+    color: #3b5998;
+}
+
+.social-icons .btn-youtube:hover{
+    color: red;
+}
+
+/* PRINCIPAL */
+
+.principal{
+    width: 100%;
+    float: left;
+    padding: 20px 8%;
+}
+
+.principal .sobre{
+    width: 70%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.sobre h2{
+    margin-bottom: 15px;
+}
+
+.sobre img{
+    width: 50%;
+    float: left;
+    border-radius: 5px;
+    margin: 0 15px 15px 0;
+}
+
+.sobre p{
+    text-align: justify;
+}
+
+/* SIDEBAR */
+.onde-estamos{
+    width: 30%;
+    float: right;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+}
+
+.onde-estamos h2{
+    margin-bottom: 5px;
+}
+
+.onde-estamos iframe{
+    width: 100%;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.onde-estamos li{
+   color: #777;
+   margin-bottom: 10px; 
+}
+
+.onde-estamos a{
+    text-decoration: none;
+    color: #777;
+}
+
+.onde-estamos a:hover{
+    color: black;
+}
+
+.onde-estamos i{
+    margin-right: 5px;
+}
+
+#whats{
+    color: #08fa59;
+}
+
+#email{
+    color: #0032bd;
+}
+
+#insta{
+    color: #d319b4;
+}
+
+.news-letter{
+    width: 100%;
+    float: left;
+    background-color: #111;
+    padding: 50px 8%;
+}
+
+.news-letter h3{
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.news-letter p{
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.news-letter form{
+    width: 100%;
+    float: left;
+    margin-top: 10px;
+}
+
+.news-letter form input{
+    width: 40%;
+    margin-right: 1%;
+    padding:  15px 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #fff;
+    background: initial;
+    float: left;
+}
+.news-letter form button{
+    width: 18%;
+    background-color: #fff;
+    padding: 15px 10px;
+    border-radius: 5px;
+    float: right;
+    cursor: pointer;
+}
+
+/* RODAPÉ */
+.rodape{
+    width: 100%;
+    float: left;
+    background-color: #13c7ae;
+    padding: 20px 8%;
+}
+
+.rodape p{
+    color: #fff;
+}
